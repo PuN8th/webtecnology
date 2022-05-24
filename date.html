@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check number is positive or negative</title>
+</head>
+    <script>
+        function calc(form) 
+        {
+            var number = document.getElementById("num1").value;
+// check if number is greater than 0
+if (number > 0) {
+res="number is positive"
+}
+
+// check if number is 0
+else if (number == 0) {
+ res="number is zero"
+}
+
+// if number is less than 0
+else {
+     res="number is negative"
+}
+        document.getElementById("result").innerHTML=res;
+    
+ }
+        </script>
+        <body style="background-color:rgb(121, 159, 240);" >
+            <h3>
+          <center>
+            <H1>CHECK NUMBER IS POSITIVE OR NEAGTIVE</H1>
+        Enter First Number :
+        <br>
+        <input type="text" id="num1" name="num1" />
+        <br>
+
+        
+        <input type="button" value="OK" onClick="calc(this)">
+       <h4>Result is</h4>
+       <p id="result" name="r1">
+        </p>
+    </h3>
+        </center>
+        
+</script>
+</body>
+</html>
