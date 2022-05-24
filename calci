@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+</head>
+<body style="background-color:rgb(130, 199, 211);" >
+    
+    <script>
+        function calc(form) {
+        
+        var D = "0";
+        var A = document.getElementById("num1").value;
+        var B = document.getElementById("op").value;
+        var C = document.getElementById("num2").value;
+        
+        if (B === "+")
+        {
+        D = parseInt(A)+parseInt(C); 
+        }
+        else if(B === "-")
+        {
+        D = parseInt(A)-parseInt(C);
+        }
+        else if(B === "*")
+        {
+        D = parseInt(A)*parseInt(C);
+        }
+        else if (B === "/")
+        {
+        D = parseInt(A)/parseInt(C);
+        }
+        document.getElementById("result").innerHTML = D;
+        return false;
+        }
+        </script>
+        <body>
+            <h3>
+          <center>
+              <H1>SIMPLE CALCULATOR</H1>
+        Enter First Number :
+        <br>
+        <input type="text" id="num1" name="num1" />
+        <br>
+        Enter operand :
+        <br>
+        <input type="text" id="op" name="op" />
+        <br>
+        Enter Second number:
+        <br>
+        <input type="text" id="num2" name="num2" />
+        <br />
+        
+        <input type="button" value="Solve" onClick="calc(this)">
+        <h4>Result is</h4>
+        <p id="result" name="r1">
+        </p>
+    </h3>
+        </center>
+        
+    </body>
+</body>
+</html>
