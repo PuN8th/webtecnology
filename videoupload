@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            VIDEO
+        </title>
+        <style>
+          body { background-color:aquamarine;
+         background-image:linear-gradient(90deg,#FAACA8 0%,#968eb3 100%);}
+         a{ font-size:20px;
+             color:blueviolet;}
+             a:hover{ background-color:#968eb3;}
+             </style>
+             </head>
+             <body>
+                 <video width="540" height="310" controls>
+                <source src="/home/exam/Downloads/Y2Mate.is - 1 minute animation project-LojclkHgeDA-144p-1649661441644.mp4" type="video/mp4">
+                 </video>
+                 <a href="ex.html" target="secondf">CLICK HERE</a>
+                </body>
+                </html>
